@@ -5,7 +5,7 @@
 %define	pdir	Locale
 %define	pnam	SubCountry
 Summary:	Locale::SubCountry - convert state, province, county etc. names to/from code
-#Summary(pl):	
+Summary(pl):	Locale::SubCountry - zamiana nazw stanu, prowincji, kraju itp. na i z kodu
 Name:		perl-Locale-SubCountry
 Version:	1.11
 Release:	1
@@ -19,13 +19,16 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 
 %description
 This module allows you to convert the full name for a countries
-administrative region to the code commonly used for postal addressing. The
-reverse lookup can also be done.  Sub country codes are defined in
+administrative region to the code commonly used for postal addressing.
+The reverse lookup can also be done. Sub country codes are defined in
 "ISO 3166-2:1998, Codes for the representation of names of countries
 and their subdivisions".
 
-# %description -l pl
-# TODO
+%description -l pl
+Ten modu³ pozwala zamieniaæ pe³ne nazwy obszarów administracyjnych
+krajów na kody pocztowe. Mo¿liwa jest tak¿e odwrotna zamiana. Kody
+wewnêtrzne krajów s± zdefiniowane w "ISO 3166-2:1998, Codes for the
+representation of names of countries and their subdivisions".
 
 %prep
 %setup -q -n %{pdir}-%{pnam}-%{version}

@@ -1,13 +1,14 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define	pdir	Locale
 %define	pnam	SubCountry
 Summary:	Locale::SubCountry - convert state, province, county etc. names to/from code
 Summary(pl):	Locale::SubCountry - zamiana nazw stanu, prowincji, kraju itp. na i z kodu
 Name:		perl-Locale-SubCountry
-Version:	1.11
+Version:	1.21
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
@@ -36,6 +37,7 @@ representation of names of countries and their subdivisions".
 %build
 perl Makefile.PL
 %{__make}
+
 %{!?_without_tests:%{__make} test}
 
 %install
@@ -48,5 +50,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
+%doc Change*
 %{perl_sitelib}/%{pdir}/*.pm
 %{_mandir}/man3/*

@@ -6,7 +6,7 @@
 %define		pdir	Locale
 %define		pnam	SubCountry
 Summary:	Locale::SubCountry - convert state, province, county etc. names to/from code
-Summary(pl.UTF-8):   Locale::SubCountry - zamiana nazw stanu, prowincji, kraju itp. na i z kodu
+Summary(pl.UTF-8):	Locale::SubCountry - zamiana nazw stanu, prowincji, kraju itp. na i z kodu
 Name:		perl-Locale-SubCountry
 Version:	1.34
 Release:	2

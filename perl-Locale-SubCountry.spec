@@ -12,8 +12,9 @@ Version:	1.38
 Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
-Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
+Source0:	http://www.cpan.org/modules/by-module/Locale/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	fdd8540e52af7a17d1a72a04eee4d148
+URL:		http://search.cpan.org/dist/Locale-SubCountry/
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
@@ -55,5 +56,5 @@ rm -rf $RPM_BUILD_ROOT
 %files
 %defattr(644,root,root,755)
 %doc Change*
-%{perl_vendorlib}/%{pdir}/*.pm
+%{perl_vendorlib}/Locale/*.pm
 %{_mandir}/man3/*

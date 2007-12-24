@@ -8,12 +8,12 @@
 Summary:	Locale::SubCountry - convert state, province, county etc. names to/from code
 Summary(pl.UTF-8):	Locale::SubCountry - zamiana nazw stanu, prowincji, kraju itp. na i z kodu
 Name:		perl-Locale-SubCountry
-Version:	1.34
-Release:	2
+Version:	1.38
+Release:	1
 License:	Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	13ab2eeb06fac3f229ec55a7820abfe4
+# Source0-md5:	fdd8540e52af7a17d1a72a04eee4d148
 BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch

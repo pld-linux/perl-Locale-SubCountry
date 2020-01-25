@@ -2,7 +2,6 @@
 # Conditional build:
 %bcond_without	tests # do not perform "make test"
 #
-%include	/usr/lib/rpm/macros.perl
 %define		pdir	Locale
 %define		pnam	SubCountry
 Summary:	Locale::SubCountry - convert state, province, county etc. names to/from code
